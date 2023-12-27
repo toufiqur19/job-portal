@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-900">
+<header class="bg-gray-800  text-white w-full">
+    <nav class=" flex items-center justify-between px-12 h-14 lg:gap-6">
+        <a class="font-bold text-2xl whitespace-nowrap" href="">Find Job</a>
+        <div id="nav_item" class="absolute top-[-180px] left-0 w-full text-center flex flex-col 
+        max-lg:bg-gray-700 lg:text-[17px] text-xl lg:static lg:flex-row lg:justify-between z-50">
+            <ul class="space-y-2 mt-2 lg:flex-row flex flex-col lg:gap-5">
+                <li class="lg:mt-2 hover:text-green-600"><a href="index.html">Home</a></li>
+                <li class="hover:text-green-600"><a href="find-job.html">Find Job</a></li>
+            </ul>
+            <div class="flex flex-col space-y-2 mt-2 mb-3 lg:flex-row lg:gap-5">
+                <button class="lg:mt-2 hover:text-green-600">Login</button>
+                <button class="hover:text-green-600">SignUp</button>
+            </div>
+        </div>
+        <div id="hamberger" class="text-xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+</header>
+
+<section class="lg:px-16 px-6">
+    <div class="grid grid-cols-2 pt-14">
+        <h1 class="heading"><span class="sobuj">Find</span> Jobs</h1>
+        <div class="text-right mt-1">
+            <select class="border-none text-gray-400 bg-gray-800 py-2 lg:w-1/5 focus:outline-none rounded-md pl-3" name="category" id="category">
+                <option value="">Latest</option>
+                <option value="">Oldest</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="grid gap-4 lg:grid-cols-4">
+        <div class="grid lg:h-1/2 bg-gray-800 mt-4 rounded-md p-4 text-white">
+            <div class="space-y-4">
+                <div>
+                    <h1 class="text-xl">Keywords</h1>
+                    <input class="focus:outline-none bg-gray-900 py-1 mt-3 rounded pl-3 w-full" type="text" placeholder="Keywords">
+                </div>
+                <div>
+                    <h1 class="text-xl">Location</h1>
+                    <input class="focus:outline-none bg-gray-900 py-1 mt-3 rounded pl-3 w-full" type="text" placeholder="location">
+                </div>
+                <div>
+                    <h1 class="text-xl">Category</h1>
+                    <select class="w-full py-1 rounded mt-3 focus:outline-none bg-gray-900 pl-2 text-gray-400" name="" id="">
+                        <option value="">Select a Category</option>
+                        <option value="">Engineering</option>
+                        <option value="">Accountant</option>
+                        <option value="">Information Technology</option>
+                        <option value="">Fashion designing</option>
+                    </select>
+                </div>
+                <div>
+                    <h1 class="text-xl">Job Type</h1>
+                    <form class="pt-3">
+                        <input type="checkbox" id="check1" value="">
+                        <label for="check1">Full Time</label><br>
+                        <input type="checkbox" id="check2" value="">
+                        <label for="check2">Part Time</label><br>
+                        <input type="checkbox" id="check3" value="">
+                        <label for="check3">Remote</label><br>
+                        <input type="checkbox" id="check4" value="">
+                        <label for="check4">Freelance</label>
+                      </form>
+                </div>
+                <div>
+                    <h1 class="text-xl">Experience</h1>
+                    <select class="w-full py-1 rounded mt-3 focus:outline-none bg-gray-900 pl-2 text-gray-400" name="" id="">
+                        <option value="">Select a Experience</option>
+                        <option value="">1 Year</option>
+                        <option value="">2 Year</option>
+                        <option value="">3 Year</option>
+                        <option value="">4 Year</option>
+                        <option value="">5 Year</option>
+                        <option value="">6 Year</option>
+                        <option value="">7 Year</option>
+                        <option value="">8 Year</option>
+                        <option value="">9 Year</option>
+                        <option value="">10 Year</option>
+                        <option value="">10+ Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Find job -->
+        <div class="lg:col-span-3">
+            
+            <div class="lg:grid-cols-2 grid gap-4 mt-4">
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+                <div class="text-white bg-gray-800 rounded-md p-6 hover:bg-gray-700">
+                    <div class="pb-4">
+                        <h1 class="text-xl font-semibold pb-1">Web Devloper</h1>
+                        <p class="">We are in need of a Web Devloper for our company</p>
+                    </div>
+                    <div class="text-black bg-gray-700 rounded-md p-5">
+                        <p><i class="fa-solid fa-location-dot"></i> Company Location</p>
+                        <p class="py-1"><i class="fa-regular fa-clock text-sm"></i> Job type</p>
+                        <p><i class="fa-solid fa-dollar-sign"></i> Job salary</p>
+                    </div>
+                    <button class="bg-green-500 w-full p-2 rounded-md mt-3 font-semibold hover:bg-green-600"><a href="">Detalls</a></button>
+                </div>
+            </div>
+            <button class="bg-green-500 py-2 mt-3 float-right px-10 rounded-md text-white font-semibold hover:bg-green-600"><a href="">More >></a></button>
+        </div>
+    </div> 
+</section>
+
+<footer class="lg:px-16 px-6 bg-gray-800 mt-20 text-white h-16">
+    <div class="text-center pt-5">
+        <p>Copyright © 2023 | toufiqur</p>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
