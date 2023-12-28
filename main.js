@@ -12,3 +12,10 @@ inputFile.onchange = function()
 {
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
 }
+
+const dropDown = document.getElementById("dropdown");
+const dropMenu = document.getElementById("drop-menu");
+
+dropMenu.addEventListener("click",()=>{
+    dropDown.classList.toggle('hidden');
+});
